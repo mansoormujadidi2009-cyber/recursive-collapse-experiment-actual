@@ -1,0 +1,12 @@
+recursive-collapse-experiment/
+  README.md
+  requirements.txt
+  configs/
+    pilot.json
+    full.json
+  src/
+    run_experiment.py
+  results/
+    README.txt
+  dataset_artifacts/
+    README.txt
