@@ -493,7 +493,7 @@ def main():
     os.makedirs(cfg["output_dir_artifacts"], exist_ok=True)
 
     # Load human data
-    wiki = load_dataset("wikipedia", "20220301.en", split="train").shuffle(seed=42)
+   wiki = load_dataset("wikimedia/wikimedia", "20220301.en", split="train").shuffle(seed=42)
     human_train_raw = wiki.select(range(cfg["n_human_train_docs"]))["text"]
     human_eval_raw  = wiki.select(range(cfg["n_human_train_docs"], cfg["n_human_train_docs"] + cfg["n_human_eval_docs"]))["text"]
 
