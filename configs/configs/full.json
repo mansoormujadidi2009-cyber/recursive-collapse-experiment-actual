@@ -1,0 +1,35 @@
+{
+  "decoder_model_name": "distilgpt2",
+  "synth_generator_name": "distilgpt2",
+  "encdec_model_name": "google/flan-t5-small",
+
+  "ratios": [0.0, 0.25, 0.5, 0.75, 1.0],
+  "seeds": [13, 42, 1337],
+
+  "n_human_train_docs": 2000,
+  "n_human_eval_docs": 400,
+  "max_synth_samples": 2000,
+
+  "block_size": 256,
+
+  "epochs": 1,
+  "lr_decoder": 0.0002,
+  "lr_encdec": 0.0002,
+  "batch_size": 4,
+  "grad_accum": 2,
+  "max_steps": 300,
+
+  "lstm_embed": 256,
+  "lstm_hidden": 256,
+  "lstm_epochs": 1,
+  "lstm_lr": 0.001,
+
+  "gen_samples": 120,
+  "prompt_chars": 160,
+  "gen_max_new_tokens": 80,
+
+  "nextseg_k": 4,
+
+  "output_dir_results": "results",
+  "output_dir_artifacts": "dataset_artifacts"
+}
